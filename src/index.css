@@ -19,9 +19,18 @@ a {
   color: #646cff;
   cursor: pointer;
   text-decoration: inherit;
+  transition: all 400ms ease;
 }
 
-a:hover {
+h2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover,
+a[aria-selected=true] {
   color: #535bf2;
 }
 
@@ -58,17 +67,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+p {
+  text-align: left;
+}
 
-  a:hover {
-    color: #747bff;
-  }
+::-webkit-scrollbar {
+  background-color: white;
+  width: .5rem;
+}
 
-  button {
-    background-color: #f9f9f9;
-  }
+::-webkit-scrollbar-thumb {
+  /* TODO: Change scrollbar color */
+  background-color: #363636;
+  border-radius: 10px;
+
+}
+
+ul {
+  list-style-type: none;
 }
