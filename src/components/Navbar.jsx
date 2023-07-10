@@ -17,6 +17,9 @@ const NavContainer = styled("div")({
   top: "2rem",
   border: "1px solid #969696",
   boxShadow: "8px 8px 8px #868686",
+  "@media (max-width: 760px)": {
+    display: 'none'
+  }
 });
 
 const Navbar = () => {

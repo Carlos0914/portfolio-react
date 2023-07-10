@@ -74,6 +74,13 @@ p {
 ::-webkit-scrollbar {
   background-color: white;
   width: .5rem;
+
+}
+
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 ::-webkit-scrollbar-thumb {
@@ -85,4 +92,5 @@ p {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }

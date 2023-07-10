@@ -9,16 +9,26 @@ const MainContainer = ({ children }) => {
     flexDirection: "column",
     minHeight: 350,
     maxHeight: "calc(100vh - 8rem - 2px)",
+    maxWidth: "calc(100vw - 6rem - 2px)",
     backgroundColor: "white",
+    "@media (min-width: 600px)": {
+      paddingRight: 0,
+    },
     padding: "2rem",
-    paddingRight: 0,
     border: "1px solid #969696",
     boxShadow: "8px 8px 8px #8a8686",
   });
 
+  const Inner = styled("div")({
+    overflow: "auto",
+    "@media (min-width: 600px)": {
+      paddingRight: "2rem",
+    },
+  });
+
   return (
     <Container>
-      <div style={{overflow: 'auto', paddingRight: "2rem"}}>{children}</div>
+      <Inner>{children}</Inner>
     </Container>
   );
 };

@@ -4,11 +4,13 @@ import { styled } from "@mui/system";
 const Image = ({ src, width, height, ...props }) => {
   const CustomImage = styled("img")({
     width,
-    height: height || width,
-    borderRadius: '40px'
+    height: height || "auto",
+    borderRadius: '40px',
+    maxWidth: '100%',
+    objectFit: "scale-down",
   });
 
-  return <CustomImage src={src} {...props} />;
+  return <CustomImage src={src} {...props} loading="lazy"/>;
 };
 
 export default Image;
