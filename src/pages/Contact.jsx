@@ -1,11 +1,11 @@
 import MainContainer from "../components/MainContainer";
 
-const Projects = () => {
+const Contact = () => {
   return (
     <MainContainer>
-      <h2>Projects</h2>
+      <h2>Contact me</h2>
     </MainContainer>
   );
 };
 
-export default Projects;
+export default Contact;

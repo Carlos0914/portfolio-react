@@ -11,24 +11,9 @@ import {
 } from "@mui/icons-material";
 import { styled } from "@mui/system";
 import logos from "../assets/logos";
+import InfoRow from "../components/InfoRow";
 
 const AboutMe = () => {
-  const InfoRow = styled("span")({
-    display: "flex",
-    alignItems: "center",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    "& span": {
-      display: "flex",
-      alignItems: "center",
-      gap: 10,
-    },
-    gap: 10,
-    rowGap: 0,
-    "& p": {
-      margin: 0,
-    },
-  });
 
   const IconsContainer = styled("span")({
     display: "flex",
@@ -52,14 +37,18 @@ const AboutMe = () => {
     <MainContainer>
       <div style={{ lineHeight: 1.75 }}>
         <h2>About me</h2>
-        <Image src={ProfilePicture} width={350} style={{float: 'left', margin: "0 3rem 1rem 0"}}/>
+        <Image
+          src={ProfilePicture}
+          width={350}
+          style={{ float: "left", margin: "0 3rem 1rem 0" }}
+        />
         <p style={{ textAlign: "justify" }}>
           Hello! My name is Carlos López, I&apos;m an applied mathematics
           graduate who made his way in the software development market, I&apos;m
-          a backend biased fullstack web developer and I always love to learn
-          about the trending tech topics. In this page, you can find information
-          about me, such as my education, my tech stack, interests and hobbies.{" "}
-          <br />
+          a backend biased fullstack web developer with +3 years of experience
+          and I always love to learn about the trending tech topics. In this
+          page, you can find information about me, such as my education, my tech
+          stack, interests and hobbies. <br />
         </p>
         <p style={{ textAlign: "justify" }}>
           If you want to, you can also learn about my{" "}

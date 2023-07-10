@@ -1,11 +1,11 @@
 import MainContainer from "../components/MainContainer";
 
-const Projects = () => {
+const Random = () => {
   return (
     <MainContainer>
-      <h2>Projects</h2>
+      <h2>Random</h2>
     </MainContainer>
   );
 };
 
-export default Projects;
+export default Random;
