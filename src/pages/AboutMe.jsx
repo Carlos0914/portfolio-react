@@ -23,13 +23,13 @@ const AboutMe = () => {
   });
 
   const Separator = styled("p")({
-    display: "none",
+    display: "none !important",
     margin: "0 10px !important",
     "&::before": {
       content: '"|"',
     },
-    "@media (min-width: 760px)": {
-      display: "block",
+    "@media (min-width: 600px)": {
+      display: "block !important",
     },
   });
 

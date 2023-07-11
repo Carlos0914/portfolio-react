@@ -2,7 +2,7 @@ import MainContainer from "../components/MainContainer";
 import BilboLogo from "../assets/Bilbo.webp";
 import ClickITLogo from "../assets/ClickIT.png";
 import Image from "../components/Image";
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import {
   CalendarMonth,
   Computer,
@@ -14,7 +14,11 @@ import InfoRow from "../components/InfoRow";
 import { Collapse } from "@mui/material";
 
 const History = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => setIndex(0), 400);
+  }, []);
 
   // eslint-disable-next-line react/display-name
   const BilboInfo = memo(() => (
@@ -91,7 +95,7 @@ const History = () => {
       <InfoRow>
         <p>
           <Computer />
-          SQL & NoSQL databases, NodeJS, React, Javascript, Typescript, Hello
+          NodeJS, SQL & NoSQL databases, React, Javascript, Typescript
         </p>
       </InfoRow>
       <InfoRow>
@@ -109,6 +113,17 @@ const History = () => {
       </InfoRow>
     </div>
   ));
+
+  const imageStyle = {
+    position: "relative",
+    padding: "10px",
+    background: "#333333",
+    borderRadius: 10,
+    margin: "0 auto",
+    zIndex: 2,
+    maxWidth: 500,
+    cursor: "pointer",
+  };
 
   const ddstyle = {
     maxWidth: "500px",
@@ -140,22 +155,14 @@ const History = () => {
             width: "100%",
             margin: "0 auto",
           }}
-          onClick={() => setIndex(0)}
         >
           <Image
+            onClick={() => setIndex(0)}
             src={ClickITLogo}
             width={"calc(100% - 20px)"}
-            style={{
-              position: "relative",
-              padding: "10px",
-              background: "#333333",
-              borderRadius: 10,
-              margin: "0 auto",
-              zIndex: 2,
-              maxWidth: 500,
-            }}
+            style={imageStyle}
           />
-          <Collapse in={index === 0} appear={true} sx={ddstyle}>
+          <Collapse in={index === 0} appear={index === 0} sx={ddstyle}>
             <ClickITInfo />
           </Collapse>
         </div>
@@ -166,22 +173,14 @@ const History = () => {
             width: "100%",
             margin: "0 auto",
           }}
-          onClick={() => setIndex(1)}
         >
           <Image
+            onClick={() => setIndex(1)}
             src={BilboLogo}
             width={"calc(100% - 20px)"}
-            style={{
-              position: "relative",
-              padding: "10px",
-              background: "#333333",
-              borderRadius: 10,
-              margin: "0 auto",
-              zIndex: 2,
-              maxWidth: 500,
-            }}
+            style={imageStyle}
           />
-          <Collapse in={index === 1} appear={true} sx={ddstyle}>
+          <Collapse in={index === 1} appear={index === 1} sx={ddstyle}>
             <BilboInfo />
           </Collapse>
         </div>
