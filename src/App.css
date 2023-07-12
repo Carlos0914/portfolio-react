@@ -5,3 +5,29 @@
   padding: 2rem;
   text-align: center;
 }
+
+.desktopNav {
+  display: none;
+}
+
+.mobileNav {
+  background-color: white;
+  z-index: 99;
+  border-radius: 0 0 8px 8px;
+}
+
+.mobileNav::before {
+  content: '»';
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 760px) {
+  .mobileNav {
+    display: none;
+  }
+
+  .desktopNav {
+    display: block;
+  }
+}
