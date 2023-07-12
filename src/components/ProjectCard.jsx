@@ -9,6 +9,7 @@ import {
 import InfoRow from "./InfoRow";
 import { CalendarMonth, Public, PublicOff } from "@mui/icons-material";
 import { styled } from "@mui/system";
+import Image from "./Image";
 
 const ProjectCard = ({ data }) => {
   const SiteLink = styled("a")({
@@ -22,8 +23,7 @@ const ProjectCard = ({ data }) => {
       sx={{
         position: "relative",
         maxWidth: "500px",
-        maxHeight: 'calc(100vh - 6rem - 78px)',
-        overflow: 'auto',
+        overflow: "auto",
         width: "calc(100% - 28px)",
         color: "black",
         margin: "0 auto",
@@ -52,8 +52,8 @@ const ProjectCard = ({ data }) => {
         </Typography>
       </CardContent>
       <InfoRow>
-        <CalendarMonth /> {data.start} - {data.end}{" "}
-        <span style={{color: '#777777'}}>({data.duration})</span>
+        <CalendarMonth /> {data.start} {data.end && "-"} {data.end}{" "}
+        <span style={{ color: "#777777" }}>({data.duration})</span>
       </InfoRow>
 
       {data.sites?.map((site, index) => (
@@ -69,11 +69,36 @@ const ProjectCard = ({ data }) => {
         </InfoRow>
       ))}
       <h4>Key tasks performed</h4>
-      <ul style={{ textAlign: "left", margin: "0 16px", listStyle: "inside", fontSize: "0.875rem" }}>
+      <ul
+        style={{
+          textAlign: "left",
+          margin: "0 16px",
+          listStyle: "inside",
+          fontSize: "0.875rem",
+        }}
+      >
         {data.tasks?.map((task, index) => (
           <li key={index}>{task}</li>
         ))}
       </ul>
+      <h4>Technologies</h4>
+      <span
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: 12,
+          flexWrap: "wrap",
+        }}
+      >
+        {data.technologies?.map((x) => (
+          <Image
+            key={x}
+            src={`/src/assets/logos/${x}.svg`}
+            width={64}
+            style={{ borderRadius: 0 }}
+          />
+        ))}
+      </span>
     </Card>
   );
 };

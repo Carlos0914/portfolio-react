@@ -1,4 +1,5 @@
 import CSS from "./CSS.svg";
+import ELECTRONJS from "./ELECTRONJS.svg";
 import EXPRESS from "./EXPRESS.svg";
 import HAML from "./HAML.svg";
 import HTML from "./HTML.svg";
@@ -10,12 +11,13 @@ import NODE from "./NODE.svg";
 import POSTGRESQL from "./POSTGRESQL.svg";
 import PYTHON from "./PYTHON.svg";
 import RAILS from "./RAILS.svg";
-import REACT from "./REACT.svg"
+import REACT from "./REACT.svg";
 import RUBY from "./RUBY.svg";
 import TYPESCRIPT from "./TYPESCRIPT.svg";
 
 export default {
   CSS: { logo: CSS, tags: ["frontend"], name: "CSS" },
+  ELECTRONJS: { logo: ELECTRONJS, tags: ["frontend"], name: "ELECTRONJS" },
   EXPRESS: { logo: EXPRESS, tags: ["backend"], name: "EXPRESS" },
   HAML: { logo: HAML, tags: ["frontend"], name: "HAML" },
   HTML: { logo: HTML, tags: ["frontend"], name: "HTML" },

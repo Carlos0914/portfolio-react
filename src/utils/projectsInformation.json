@@ -1,0 +1,170 @@
+[
+    {
+        "title": "Lozmar",
+        "media": "/src/assets/Lozmar.jpeg",
+        "description": "Management platform for cargo shipments and their invoices",
+        "start": 2021,
+        "end": "present",
+        "duration": "Currently providing support",
+        "tasks": [
+            "Bux fixing and troubleshooting",
+            "Updated integration with invoice stamp service to comply with new law regulations",
+            "File managment feature using AWS S3",
+            "Worked on several parts of the dashboard for users and administrators"
+        ],
+        "sites": [
+            {
+                "url": "https://ccp.applozmar.com",
+                "active": true
+            }
+        ],
+        "technologies": [
+            "MONGODB",
+            "EXPRESS",
+            "REACT",
+            "NODE",
+            "CSS"
+        ]
+    },
+    {
+        "title": "Stellar menus",
+        "media": "/src/assets/StellarMenus.webp",
+        "description": "Restaurant management tool to create, edit and manage both digital and printed menus",
+        "start": 2022,
+        "end": 2023,
+        "duration": "1 Year",
+        "tasks": [
+            "Created a React frontend with hooks for state management.",
+            "Implemented multiple backend APIs (microservices architecture) in NodeJs using Express and Serverless frameworks.",
+            "Developed RESTful endpoints that interacts with database tables through MongoDB queries.",
+            "Designed user-friendly UI components such as modals, forms etc."
+        ],
+        "sites": [
+            {
+                "url": "https://app.stellarmenus.com",
+                "active": true
+            },
+            {
+                "url": "https://menu.stellarmenus.com",
+                "active": true
+            },
+            {
+                "url": "https://print.stellarmenus.com",
+                "active": true
+            }
+        ],
+        "technologies": [
+            "MONGODB",
+            "EXPRESS",
+            "REACT",
+            "NODE",
+            "CSS"
+        ]
+    },
+    {
+        "title": "Brandverge",
+        "media": "/src/assets/BrandVerge.png",
+        "description": "Marketing platform to connect media owners with advertisers",
+        "start": 2022,
+        "end": 2023,
+        "duration": "~ 15 months",
+        "tasks": [
+            "Bux fixing and troubleshooting",
+            "Developed an RFP feature using NodeJs and an SQL database",
+            "Created an analytics dashboard for administrators and users",
+            "Improved user management and user registration flow"
+        ],
+        "sites": [
+            {
+                "url": "https://app.gobrandverge.com",
+                "active": true
+            }
+        ],
+        "technologies": [
+            "POSTGRESQL",
+            "EXPRESS",
+            "REACT",
+            "NODE",
+            "CSS"
+        ]
+    },
+    {
+        "title": "8Stem",
+        "media": "/src/assets/8stem.webp",
+        "description": "Music and audio remixes creation platform",
+        "start": 2022,
+        "end": null,
+        "duration": "~ 1 month",
+        "tasks": [
+            "Recovery of files from a snapshot due to a data loss",
+            "Update and troubleshoot dependencies for a Ruby on Rails Application",
+            "Worked with a DevOps engineer to put the aplication back online after the data loss"
+        ],
+        "sites": [
+            {
+                "url": "https://mix8.com",
+                "active": false
+            },
+            {
+                "url": "https://www.8stem.com.mx",
+                "active": false
+            }
+        ],
+        "technologies": [
+            "RAILS",
+            "POSTGRESQL"
+        ]
+    },
+    {
+        "title": "Elevate Invesment",
+        "media": "/src/assets/Elevate.jpeg",
+        "description": "Real state real-time trading on the UK",
+        "start": 2022,
+        "end": null,
+        "duration": "~ 1 month",
+        "tasks": [
+            "Update and troubleshoot dependencies for a Ruby on Rails Application",
+            "Bux fixing and troubleshooting"
+        ],
+        "sites": [
+            {
+                "url": "https://home.iyield.co/",
+                "active": false
+            }
+        ],
+        "technologies": [
+            "RAILS",
+            "POSTGRESQL"
+        ]
+    },
+    {
+        "title": "Bilbo",
+        "media": "/src/assets/BilboIcon.jpeg",
+        "description": "Marketing platform to connect digital media owners with advertisers and automate ad scheduling",
+        "start": 2020,
+        "end": 2021,
+        "duration": "~ 17 months",
+        "tasks": [
+            "Developed an algorithm to automate ad scheduling based on user specifications",
+            "Integrated the algorithm with the backend of the application",
+            "Used ElectronJS to create a desktop ad player for windows",
+            "Create and integrate dynamic forms with HAML and ERB"
+        ],
+        "sites": [
+            {
+                "url": "https://app.bilbo.mx",
+                "active": false
+            },
+            {
+                "url": "https://www.bilbo.mx",
+                "active": true
+            }
+        ],
+        "technologies": [
+            "RAILS",
+            "POSTGRESQL",
+            "HAML",
+            "ELECTRONJS"
+        ]
+    }
+]

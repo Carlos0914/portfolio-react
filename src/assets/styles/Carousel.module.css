@@ -11,6 +11,11 @@
     background-color: #999999;
 }
 
+.carousel div:has(button) {
+    position: sticky;
+    top: 120px;
+}
+
 .carousel button {
     background-color: #AAAAAA;
     display: flex;
