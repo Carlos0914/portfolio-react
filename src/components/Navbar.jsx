@@ -56,7 +56,7 @@ const Navbar = () => {
         active={location.pathname === "/history"}
       />
       <NavButton
-        text="Proyects"
+        text="Projects"
         path="projects"
         icon={<Computer />}
         active={location.pathname === "/projects"}

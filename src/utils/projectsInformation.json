@@ -1,7 +1,7 @@
 [
     {
         "title": "Lozmar",
-        "media": "/src/assets/Lozmar.jpeg",
+        "media": "Lozmar",
         "description": "Management platform for cargo shipments and their invoices",
         "start": 2021,
         "end": "present",
@@ -28,7 +28,7 @@
     },
     {
         "title": "Stellar menus",
-        "media": "/src/assets/StellarMenus.webp",
+        "media": "StellarMenus",
         "description": "Restaurant management tool to create, edit and manage both digital and printed menus",
         "start": 2022,
         "end": 2023,
@@ -63,7 +63,7 @@
     },
     {
         "title": "Brandverge",
-        "media": "/src/assets/BrandVerge.png",
+        "media": "Brandverge",
         "description": "Marketing platform to connect media owners with advertisers",
         "start": 2022,
         "end": 2023,
@@ -90,7 +90,7 @@
     },
     {
         "title": "8Stem",
-        "media": "/src/assets/8stem.webp",
+        "media": "8Stem",
         "description": "Music and audio remixes creation platform",
         "start": 2022,
         "end": null,
@@ -117,7 +117,7 @@
     },
     {
         "title": "Elevate Invesment",
-        "media": "/src/assets/Elevate.jpeg",
+        "media": "Elevate",
         "description": "Real state real-time trading on the UK",
         "start": 2022,
         "end": null,
@@ -139,7 +139,7 @@
     },
     {
         "title": "Bilbo",
-        "media": "/src/assets/BilboIcon.jpeg",
+        "media": "Bilbo",
         "description": "Marketing platform to connect digital media owners with advertisers and automate ad scheduling",
         "start": 2020,
         "end": 2021,

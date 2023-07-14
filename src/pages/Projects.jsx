@@ -19,33 +19,6 @@ const Projects = () => {
         {projects.map((project) => (
           <ProjectCard key={project.title} data={project} />
         ))}
-        {/* <ProjectCard
-          data={}
-        /> */}
-        {/* <ProjectCard
-          data={{
-            title: "Stellar menus",
-            media: "/src/assets/logos/REACT.svg",
-            description:
-              "2. Restaurant management tool to create, edit and manage both digital and printed menus",
-          }}
-        />
-        <ProjectCard
-          data={{
-            title: "Stellar menus",
-            media: "/src/assets/logos/REACT.svg",
-            description:
-              "3. Restaurant management tool to create, edit and manage both digital and printed menus",
-          }}
-        />
-        <ProjectCard
-          data={{
-            title: "Stellar menus",
-            media: "/src/assets/logos/REACT.svg",
-            description:
-              "4. Restaurant management tool to create, edit and manage both digital and printed menus",
-          }}
-        /> */}
       </Carousel>
     </MainContainer>
   );

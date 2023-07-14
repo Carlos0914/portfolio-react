@@ -16,6 +16,10 @@
     top: 120px;
 }
 
+.carousel [class*="item-provider"] {
+    height: calc(100vh - 206px);
+}
+
 .carousel button {
     background-color: #AAAAAA;
     display: flex;
