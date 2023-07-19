@@ -1,0 +1,12 @@
+{
+    "navbar": {
+        "about": "About me",
+        "history": "Work history",
+        "projects": "Projects",
+        "contact": "Contact me"
+    },
+    "home": {
+        "title": "About me",
+        "desc": "Welcome to my personal website! My name is Carlos López. I&apos;m an applied mathematics graduate who developed a keen interest in programming early on in my career, leading me to venture into the software development market. <br /> With over three years of experience, I specialize in backend-focused full-stack web development. I am passionate about staying up to date with the latest trends in technology and continuously expanding my knowledge. <br /> On this page, you will find details about my educational background, including my degree and certifications, as well as information about my tech stack."
+    }
+}

@@ -1,8 +1,10 @@
 import { styled } from "@mui/system";
 import NavButton from "./NavButton";
-import { Computer, Dashboard, Mail, Person, Work } from "@mui/icons-material";
+import { Computer, Mail, Person, Work } from "@mui/icons-material";
 import { useLocation } from "react-router-dom";
 import { isMobile } from "react-device-detect";
+import LanguageSelector from "./LanguageSelector";
+import { strings } from "../locales/LocalizedStrings";
 
 const NavContainer = styled("div")({
   minWidth: "calc(320px - 8rem)",
@@ -19,7 +21,7 @@ const NavContainer = styled("div")({
   border: "1px solid #969696",
   boxShadow: "8px 8px 8px #868686",
   "@media (max-width: 759px)": {
-    borderRadius: "0 0 40px 40px",
+    borderRadius: "40px 40px 0 0",
     boxShadow: "none",
     paddingTop: "1rem",
   },
@@ -27,14 +29,14 @@ const NavContainer = styled("div")({
 
 const DragUpIcon = styled("p")({
   position: "absolute",
-  bottom: 0,
+  top: 0,
   margin: "2px 0",
   textAlign: "center",
   width: "calc(100% - 4rem)",
   "&::before": {
     content: '"»"',
     display: "inline-block",
-    transform: "rotate(-90deg)",
+    transform: "rotate(90deg)",
   },
 });
 
@@ -43,37 +45,38 @@ const Navbar = () => {
 
   return (
     <NavContainer>
+      {isMobile && <DragUpIcon />}
       <NavButton
-        text="About me"
+        text={strings?.navbar?.about}
         path=""
         icon={<Person />}
         active={location.pathname === "/"}
       />
       <NavButton
-        text="Work History"
+        text={strings?.navbar?.history}
         path="history"
         icon={<Work />}
         active={location.pathname === "/history"}
       />
       <NavButton
-        text="Projects"
+        text={strings?.navbar?.projects}
         path="projects"
         icon={<Computer />}
         active={location.pathname === "/projects"}
       />
-      <NavButton
+      {/* <NavButton
         text="Random"
         path="random"
         icon={<Dashboard />}
         active={location.pathname === "/random"}
-      />
+      /> */}
       <NavButton
-        text="Contact me"
+        text={strings?.navbar?.contact}
         path="contact"
         icon={<Mail />}
         active={location.pathname === "/contact"}
       />
-      {isMobile && <DragUpIcon />}
+      <LanguageSelector />
     </NavContainer>
   );
 };

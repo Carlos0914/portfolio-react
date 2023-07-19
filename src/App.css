@@ -13,13 +13,13 @@
 .mobileNav {
   background-color: white;
   z-index: 99;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .mobileNav::before {
   content: '»';
   display: inline-block;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 @media (min-width: 760px) {

@@ -12,9 +12,10 @@ import {
 import { styled } from "@mui/system";
 import logos from "../assets/logos";
 import InfoRow from "../components/InfoRow";
+import { Helmet } from "react-helmet";
+import { strings } from "../locales/LocalizedStrings";
 
 const AboutMe = () => {
-
   const IconsContainer = styled("span")({
     display: "flex",
     gap: "1rem",
@@ -35,39 +36,45 @@ const AboutMe = () => {
 
   return (
     <MainContainer>
+      <Helmet>
+        <title>{strings.meta.home}</title>
+      </Helmet>
       <div style={{ lineHeight: 1.75 }}>
-        <h2>About me</h2>
+        <h2>{strings.navbar.about}</h2>
         <Image
           src={ProfilePicture}
           width={350}
           style={{ float: "left", margin: "0 3rem 1rem 0" }}
         />
         <p style={{ textAlign: "justify" }}>
-          Hello! My name is Carlos López, I&apos;m an applied mathematics
-          graduate who made his way in the software development market, I&apos;m
-          a backend biased fullstack web developer with +3 years of experience
-          and I always love to learn about the trending tech topics. In this
-          page, you can find information about me, such as my education, my tech
-          stack, interests and hobbies. <br />
+          {strings.home.line1}
+          <br />
+          {strings.home.line2}
+          <br />
+          {strings.home.line3}
+          {/* <br />
+          Feel free to explore the <Link to="/random">random</Link> tab to learn
+          more about my interests and hobbies. */}
         </p>
         <p style={{ textAlign: "justify" }}>
-          If you want to, you can also learn about my{" "}
-          <Link to="/history">work history</Link>, my{" "}
-          <Link to="/projects">projects</Link> and{" "}
-          <Link to="/random">random stuff</Link> about me.
+          {strings.formatString(
+            strings.home.line4,
+            <Link to="/projects">{strings.navbar.projects}</Link>,
+            <Link to="/history">{strings.navbar.history}</Link>
+          )}
         </p>
         <div style={{ display: "flow-root" }}>
           <h2>
-            <School /> Education
+            <School /> {strings.home.education}
           </h2>
           <ul>
             <li>
               <h4 style={{ margin: "8px 0" }}>
-                Bachelor of Sciences, Applied Mathematics
+                {strings.home.degree}
               </h4>
               <InfoRow>
                 <span>
-                  <LocationOn /> Autonomous University of Coahuila
+                  <LocationOn /> {strings.home.university}
                 </span>
                 <Separator />
                 <span>
@@ -76,7 +83,7 @@ const AboutMe = () => {
               </InfoRow>
               <InfoRow>
                 <span>
-                  <School /> Graduated with honors
+                  <School /> {strings.home.note}
                 </span>
                 <Separator />
                 <span>
@@ -116,9 +123,9 @@ const AboutMe = () => {
         </div>
         <div style={{ display: "flow-root" }}>
           <h2>
-            <Engineering /> My Tech Stack
+            <Engineering /> {strings.home.techStack}
           </h2>
-          <h3>Main Stack</h3>
+          <h3>{strings.home.main}</h3>
           <IconsContainer>
             {["MONGODB", "EXPRESS", "REACT", "NODE"]
               .map((x) => logos[x])
@@ -131,7 +138,7 @@ const AboutMe = () => {
                 />
               ))}
           </IconsContainer>
-          <h3>Programming Languages</h3>
+          <h3>{strings.home.programming_languages}</h3>
           <IconsContainer>
             {Object.values(logos)
               .filter((x) => x.tags.includes("language"))
@@ -170,7 +177,7 @@ const AboutMe = () => {
                 />
               ))}
           </IconsContainer>
-          <h3>Databases</h3>
+          <h3>{strings.home.databases}</h3>
           <IconsContainer>
             {Object.values(logos)
               .filter((x) => x.tags.includes("database"))

@@ -8,12 +8,13 @@ import Random from "./pages/Random";
 import Contact from "./pages/Contact";
 import { SwipeableDrawer } from "@mui/material";
 import { useState } from "react";
+import LanguageContextProvider from "./context/Language";
 
 function App() {
   const [showDrawer, setShowDrawer] = useState(false);
 
   return (
-    <>
+    <LanguageContextProvider>
       <BrowserRouter>
         <div className="desktopNav">
           <Navbar />
@@ -27,21 +28,22 @@ function App() {
         </Routes>
         {/* TODO: Swipe area doesn't work on desktop */}
         <SwipeableDrawer
-          anchor="top"
+          anchor="bottom"
           open={showDrawer}
           onClose={() => setShowDrawer(false)}
-          onDoubleClick={() => setShowDrawer(true)}
           onOpen={() => setShowDrawer(true)}
           PaperProps={{ style: { backgroundColor: "transparent" } }}
           SwipeAreaProps={{
             className: "mobileNav",
+            onClick: () => setShowDrawer(true)
+
           }}
           allowSwipeInChildren={true}
         >
           <Navbar />
         </SwipeableDrawer>
       </BrowserRouter>
-    </>
+    </LanguageContextProvider>
   );
 }
 

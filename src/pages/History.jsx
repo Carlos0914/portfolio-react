@@ -12,9 +12,14 @@ import {
 } from "@mui/icons-material";
 import InfoRow from "../components/InfoRow";
 import { Collapse } from "@mui/material";
+import { Helmet } from "react-helmet";
+import { strings } from "../locales/LocalizedStrings";
 
 const History = () => {
   const [index, setIndex] = useState(null);
+  const {
+    history: { clickit, bilbo },
+  } = strings;
 
   useEffect(() => {
     setTimeout(() => setIndex(0), 400);
@@ -37,18 +42,18 @@ const History = () => {
       </InfoRow>
       <InfoRow>
         <p>
-          <Person /> Backend web developer
+          <Person /> {bilbo.role}
         </p>
       </InfoRow>
       <InfoRow>
         <p>
-          <Label /> Web application development
+          <Label /> {bilbo.line}
         </p>
       </InfoRow>
       <InfoRow>
         <p>
           <Computer />
-          Ruby, Rails, PostgreSQL, JQuery
+          {bilbo.tech}
         </p>
       </InfoRow>
       <InfoRow>
@@ -79,23 +84,23 @@ const History = () => {
     >
       <InfoRow>
         <p>
-          <CalendarMonth /> 2021 - Present
+          <CalendarMonth /> {clickit.date}
         </p>
       </InfoRow>
       <InfoRow>
         <p>
-          <Person /> Full stack developer
+          <Person /> {clickit.role}
         </p>
       </InfoRow>
       <InfoRow>
         <p>
-          <Label /> Web application development
+          <Label /> {clickit.line}
         </p>
       </InfoRow>
       <InfoRow>
         <p>
           <Computer />
-          NodeJS, SQL & NoSQL databases, React, Javascript, Typescript
+          {clickit.tech}
         </p>
       </InfoRow>
       <InfoRow>
@@ -140,7 +145,10 @@ const History = () => {
 
   return (
     <MainContainer>
-      <h2>Work history</h2>
+      <Helmet>
+        <title>{strings.meta.history}</title>
+      </Helmet>
+      <h2>{strings.navbar.history}</h2>
       <div
         style={{
           flexDirection: "column",

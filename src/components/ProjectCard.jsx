@@ -13,9 +13,11 @@ import Image from "./Image";
 import logos from "../assets/logos";
 import projectlogos from "../assets/projectlogos";
 import { useEffect, useRef, useState } from "react";
+import { strings } from "../locales/LocalizedStrings";
 
 const ProjectCard = ({ data }) => {
   const cardRef = useRef(null);
+  const project = strings.projects[data.key]
   const [cardHeight, setCardHeight] = useState(0);
 
   const SiteLink = styled("a")({
@@ -69,12 +71,12 @@ const ProjectCard = ({ data }) => {
       >
         <CardContent>
           <Typography align="center" fontStyle="italic">
-            {data.description}
+            {project?.description}
           </Typography>
         </CardContent>
         <InfoRow>
-          <CalendarMonth /> {data.start} {data.end && "-"} {data.end}{" "}
-          <span style={{ color: "#777777" }}>({data.duration})</span>
+          <CalendarMonth /> {project?.dates['0']}
+          <span style={{ color: "#777777" }}>({project?.dates[1]})</span>
         </InfoRow>
 
         {data.sites?.map((site, index) => (
@@ -89,7 +91,7 @@ const ProjectCard = ({ data }) => {
             </SiteLink>
           </InfoRow>
         ))}
-        <h4>Key tasks performed</h4>
+        <h4>{strings.projects.labels.tasks}</h4>
         <ul
           style={{
             textAlign: "left",
@@ -98,11 +100,11 @@ const ProjectCard = ({ data }) => {
             fontSize: "0.875rem",
           }}
         >
-          {data.tasks?.map((task, index) => (
+          {project?.tasks?.map((task, index) => (
             <li key={index}>{task}</li>
           ))}
         </ul>
-        <h4>Technologies</h4>
+        <h4>{strings.projects.labels.tech}</h4>
         <span
           style={{
             display: "flex",
