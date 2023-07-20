@@ -35,7 +35,7 @@ const History = () => {
         padding: "0 20px",
       }}
     >
-      <InfoRow>
+      <InfoRow style={{marginTop: 10}}>
         <p>
           <CalendarMonth /> 2020 - 2021
         </p>
@@ -56,7 +56,7 @@ const History = () => {
           {bilbo.tech}
         </p>
       </InfoRow>
-      <InfoRow>
+      <InfoRow style={{marginBottom: 10}}>
         <p>
           <Public />{" "}
           <a
@@ -82,7 +82,7 @@ const History = () => {
         padding: "0 20px",
       }}
     >
-      <InfoRow>
+      <InfoRow style={{marginTop: 10}}>
         <p>
           <CalendarMonth /> {clickit.date}
         </p>
@@ -103,7 +103,7 @@ const History = () => {
           {clickit.tech}
         </p>
       </InfoRow>
-      <InfoRow>
+      <InfoRow style={{marginBottom: 10}}>
         <p>
           <Public />{" "}
           <a
@@ -123,7 +123,7 @@ const History = () => {
     position: "relative",
     padding: "10px",
     background: "#333333",
-    borderRadius: 10,
+    borderRadius: "10px 10px 0 0",
     margin: "0 auto",
     zIndex: 2,
     maxWidth: 500,
@@ -134,12 +134,11 @@ const History = () => {
     maxWidth: "500px",
     color: "#333333",
     width: "auto",
+    top: -6,
     background: "#AAAAAA",
     margin: "0 auto",
-    padding: "1rem 0",
     borderRadius: "0 0 10px 10px",
     position: "relative",
-    top: -14,
     zIndex: 0,
   };
 
@@ -171,7 +170,7 @@ const History = () => {
             style={imageStyle}
           />
           <Collapse in={index === 0} appear={index === 0} sx={ddstyle}>
-            <ClickITInfo />
+            <ClickITInfo style={index !== 0 ? {padding: 0} : {}}/>
           </Collapse>
         </div>
         <div

@@ -110,6 +110,7 @@ const Contact = () => {
         <TextField
           fullWidth
           required
+          minRows={5}
           error={Boolean(errors.message)}
           helperText={errors.message}
           multiline
