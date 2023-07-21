@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import { SwipeableDrawer } from "@mui/material";
 import { useState } from "react";
 import LanguageContextProvider from "./context/Language";
+import Services from "./pages/Services";
 
 function App() {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -21,6 +22,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" Component={AboutMe} />
+          <Route path="/services" Component={Services} />
           <Route path="/history" Component={History} />
           <Route path="/projects" Component={Projects} />
           <Route path="/random" Component={Random} />
@@ -35,8 +37,7 @@ function App() {
           PaperProps={{ style: { backgroundColor: "transparent" } }}
           SwipeAreaProps={{
             className: "mobileNav",
-            onClick: () => setShowDrawer(true)
-
+            onClick: () => setShowDrawer(true),
           }}
           allowSwipeInChildren={true}
         >

@@ -1,6 +1,12 @@
 import { styled } from "@mui/system";
 import NavButton from "./NavButton";
-import { Computer, Mail, Person, Work } from "@mui/icons-material";
+import {
+  Computer,
+  Mail,
+  Person,
+  SupportAgent,
+  Work,
+} from "@mui/icons-material";
 import { useLocation } from "react-router-dom";
 import { isMobile } from "react-device-detect";
 import LanguageSelector from "./LanguageSelector";
@@ -24,6 +30,9 @@ const NavContainer = styled("div")({
     borderRadius: "40px 40px 0 0",
     boxShadow: "none",
     paddingTop: "1rem",
+  },
+  "& a:last-of-type > span": {
+    marginBottom: 32,
   },
 });
 
@@ -51,6 +60,12 @@ const Navbar = () => {
         path=""
         icon={<Person />}
         active={location.pathname === "/"}
+      />
+      <NavButton
+        text={strings?.navbar?.services}
+        path="services"
+        icon={<SupportAgent />}
+        active={location.pathname === "/services"}
       />
       <NavButton
         text={strings?.navbar?.history}

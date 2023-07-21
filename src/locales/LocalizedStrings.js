@@ -7,6 +7,7 @@ export const strings = new LocalizedStrings({
       history: "Work history",
       projects: "Projects",
       contact: "Contact me",
+      services: "Services",
     },
     home: {
       line1:
@@ -125,12 +126,28 @@ export const strings = new LocalizedStrings({
         form: "There was a problem while sending your message, please try again in a few seconds",
       },
     },
+    services: {
+      headline: "What I can do for you or your business",
+      titles: [
+        "Custom Static Website Creation and Hosting",
+        "Full Stack Web Application Development",
+        "Staff Augmentation",
+        "Bug Fixing & Troubleshooting",
+      ],
+      items: [
+        "I will build a static website for your business, based on your preferred design. The site will be fast, secure, and responsive to different devices. I will also assist with domain selection and getting it online. Get a professional web presence in no time!",
+        "I offer comprehensive Full Stack Web Application Development services to bring your ideas to life. From front-end user interfaces to back-end server logic, I will build a robust and scalable application tailored to your needs. With expertise in various programming languages and frameworks, I ensure seamless integration and an exceptional user experience.",
+        "Enhance your team's productivity and efficiency with my Staff Augmentation services. I can seamlessly integrate into your existing workforce as a back-end, front-end, or full-stack developer, depending on your needs. I provide flexible engagement models, working with your team to accelerate project timelines and achieve outstanding results.",
+        "Resolve technical issues swiftly and effectively with my Bug Fixing & Troubleshooting services. I have a keen eye for detail and a deep understanding of various technologies, allowing me to identify and resolve bugs and other problems efficiently. Whether it's debugging code or resolving complex technical issues, I'll get your system back on track.",
+      ],
+    },
     meta: {
       home: "Home | Carlos Lopez",
       history: "Work history | Carlos Lopez",
       projects: "Projects | Carlos Lopez",
-      contact: "Contact | Carlos Lopez"
-    } 
+      contact: "Contact | Carlos Lopez",
+      services: "Services | Carlos Lopez",
+    },
   },
   es: {
     navbar: {
@@ -138,6 +155,7 @@ export const strings = new LocalizedStrings({
       history: "Historia laboral",
       projects: "Proyectos",
       contact: "Contacto",
+      services: "Servicios",
     },
     home: {
       line1:
@@ -145,7 +163,7 @@ export const strings = new LocalizedStrings({
       line2:
         "Con más de tres años de experiencia, me especializo en el desarrollo web full-stack con un mayor enfoque en el backend. Me apasiona mantenerme al día con las últimas novedades en tecnología y expandir mi conocimiento continuamente.",
       line3:
-        "En esta página encontrarás detallers sobre mi formación académica, incluyendo mi título y certificaciones, así como información sobre mi tech stack",
+        "En esta página encontrarás detallers sobre mi formación académica, incluyendo mi título y certificaciones, así como información sobre mi tech stack.",
       line4:
         "Si te interesa explorar mis proyectos o conocer más sobre mi historia laboral, puedes encontrar mas detalles en sus respectivas páginas: {0} y {1}. Estas páginas proveen una descripción general de los proyectos en los que he trabajado y de mi experiencia profesional al día de hoy. No dude en dar clic en los respectivos enlaces para profundizar en mis logros pasados y ver los resultados tangibles de mi experiencia.",
       education: "Formación académica",
@@ -256,11 +274,27 @@ export const strings = new LocalizedStrings({
         form: "Hubo un problema al enviar tu mensaje, por favor intenta de nuevo en unos segundos",
       },
     },
+    services: {
+      headline: "Lo que puedo hacer por tí o tu negocio",
+      titles: [
+        "Creación y alojamiento de sitios web estáticos personalizados",
+        "Desarrollo de Aplicaciones Web Full Stack",
+        "Ampliación de Personal",
+        "Corrección de Errores y Solución de Problemas",
+      ],
+      items: [
+        "Crearé un sitio web estático para tu negocio, basado en tu diseño preferido. El sitio será rápido, seguro y compatible con diferentes dispositivos. También ofreceré soporte para la elección del dominio y su puesta en línea. ¡Tendrás una presencia profesional en la web en poco tiempo!",
+        "Ofrezco servicios completos de Desarrollo de Aplicaciones Web Full Stack para dar vida a tus ideas. Desde interfaces de usuario en el front-end hasta la lógica del servidor en el back-end, construiré una aplicación sólida y escalable adaptada a tus necesidades. Con experiencia en diversos lenguajes de programación y marcos de trabajo, garantizo una integración perfecta y una experiencia de usuario excepcional.",
+        "Optimiza la productividad y eficiencia de tu equipo con mis servicios de Ampliación de Personal. Puedo integrarme sin problemas en tu fuerza laboral existente como desarrollador back end, front end o full stack, según lo requieras. Proporciono modelos de compromiso flexibles, trabajando con tu equipo para acelerar los plazos del proyecto y lograr resultados sobresalientes.",
+        "Resuelve problemas técnicos de forma rápida y efectiva con mis servicios de Corrección de Errores y Solución de Problemas. Tengo un ojo agudo para los detalles y una comprensión profunda de diversas tecnologías, lo que me permite identificar y resolver errores y otros problemas de manera eficiente. Ya sea depurar código o resolver problemas técnicos complejos, pondré tu sistema de nuevo en marcha.",
+      ],
+    },
     meta: {
       home: "Inicio | Carlos López",
       history: "Historia laboral | Carlos López",
       projects: "Proyectos | Carlos López",
-      contact: "Contacto | Carlos López"
-    }
+      contact: "Contacto | Carlos López",
+      services: "Servicios | Carlos López",
+    },
   },
 });

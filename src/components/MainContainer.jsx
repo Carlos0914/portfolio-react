@@ -52,7 +52,7 @@ const Container2 = styled("div")({
 
 const Inner2 = styled("div")({
   overflow: "auto",
-  "@media (min-width: 760px)": {
+  "@media (min-width: 600px)": {
     paddingRight: "2rem",
   },
 });
