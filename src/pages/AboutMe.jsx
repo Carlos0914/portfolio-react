@@ -69,9 +69,7 @@ const AboutMe = () => {
           </h2>
           <ul>
             <li>
-              <h4 style={{ margin: "8px 0" }}>
-                {strings.home.degree}
-              </h4>
+              <h4 style={{ margin: "8px 0" }}>{strings.home.degree}</h4>
               <InfoRow>
                 <span>
                   <LocationOn /> {strings.home.university}

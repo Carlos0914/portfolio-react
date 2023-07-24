@@ -2,6 +2,9 @@ import LocalizedStrings from "react-localization";
 
 export const strings = new LocalizedStrings({
   en: {
+    other: {
+      here: "here",
+    },
     navbar: {
       about: "About me",
       history: "Work history",
@@ -150,6 +153,9 @@ export const strings = new LocalizedStrings({
     },
   },
   es: {
+    other: {
+      here: "aquí",
+    },
     navbar: {
       about: "Sobre mí",
       history: "Historia laboral",

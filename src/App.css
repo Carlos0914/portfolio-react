@@ -13,6 +13,7 @@
 .mobileNav {
   background-color: white;
   z-index: 99;
+  cursor: pointer;
   border-radius: 8px 8px 0px 0px;
 }
 

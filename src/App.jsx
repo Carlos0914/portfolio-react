@@ -28,13 +28,14 @@ function App() {
           <Route path="/random" Component={Random} />
           <Route path="/contact" Component={Contact} />
         </Routes>
-        {/* TODO: Swipe area doesn't work on desktop */}
         <SwipeableDrawer
           anchor="bottom"
           open={showDrawer}
           onClose={() => setShowDrawer(false)}
           onOpen={() => setShowDrawer(true)}
-          PaperProps={{ style: { backgroundColor: "transparent" } }}
+          PaperProps={{
+            style: { backgroundColor: "transparent" },
+          }}
           SwipeAreaProps={{
             className: "mobileNav",
             onClick: () => setShowDrawer(true),
