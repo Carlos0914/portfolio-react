@@ -11,6 +11,7 @@ import {
 } from "@mui/icons-material";
 import { styled } from "@mui/system";
 import logos from "../assets/logos";
+// import Icon from "icon.jpeg"
 import InfoRow from "../components/InfoRow";
 import { Helmet } from "react-helmet";
 import { strings } from "../locales/LocalizedStrings";
@@ -51,7 +52,7 @@ const AboutMe = () => {
           <br />
           {strings.home.line2}
           <br />
-          {strings.home.line3}
+          {/* {strings.home.line3} */}
           {/* <br />
           Feel free to explore the <Link to="/random">random</Link> tab to learn
           more about my interests and hobbies. */}

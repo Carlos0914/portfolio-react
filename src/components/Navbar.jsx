@@ -11,6 +11,7 @@ import { useLocation } from "react-router-dom";
 import { isMobile } from "react-device-detect";
 import LanguageSelector from "./LanguageSelector";
 import { strings } from "../locales/LocalizedStrings";
+import Image from "./Image";
 
 const NavContainer = styled("div")({
   minWidth: "calc(320px - 8rem)",
@@ -49,12 +50,21 @@ const DragUpIcon = styled("p")({
   },
 });
 
+const ImageContainer = styled("span")({
+  ...(isMobile && { marginTop: 12 }),
+  display: "flex",
+  justifyContent: "center",
+});
+
 const Navbar = () => {
   const location = useLocation();
 
   return (
     <NavContainer>
       {isMobile && <DragUpIcon />}
+      <ImageContainer>
+        <Image src="/logo.jpeg" style={{ borderRadius: 0, maxHeight: 128, filter: 'invert(1)' }} />
+      </ImageContainer>
       <NavButton
         text={strings?.navbar?.about}
         path=""
