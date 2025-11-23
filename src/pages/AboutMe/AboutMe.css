@@ -1,0 +1,138 @@
+.about-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.profile-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.link-highlight {
+    color: var(--accent-primary);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.2s;
+}
+
+.link-highlight:hover {
+    text-decoration-color: var(--accent-primary);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: var(--accent-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.education-list {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.education-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.info-row {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-stack {
+    margin-bottom: 3rem;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.tech-item {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff;
+}
+
+.tech-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

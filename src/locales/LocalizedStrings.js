@@ -12,15 +12,22 @@ export const strings = new LocalizedStrings({
       contact: "Contact me",
       services: "Services",
     },
+    notFound: {
+      title: "404 - Page Not Found",
+      message: "Oops! The page you're looking for doesn't exist.",
+      homeButton: "Go Back Home",
+    },
     home: {
       line1:
         "Welcome to my personal website! My name is Carlos López. I'm an applied mathematics graduate who developed a keen interest in programming early on in my career, leading me to venture into the software development market.",
       line2:
-        "With over three years of experience, I specialize in backend-focused full-stack web development. I am passionate about staying up to date with the latest trends in technology and continuously expanding my knowledge.",
+        "With over five years of experience, I specialize in backend-focused full-stack web development. I am passionate about staying up to date with the latest trends in technology and continuously expanding my knowledge.",
       line3:
-        "On this page, you will find details about my educational background, including my degree and certifications, as well as information about my tech stack.",
+        "Beyond coding, I enjoy listening to music, traveling to new places, and staying active through sports. These interests keep me balanced and inspire creativity in my work.",
       line4:
-        "If you're interested in exploring my projects or learning about my work history, you can find more details on the dedicated pages: {0} and {1}. These pages provide a comprehensive overview of the exciting projects I've worked on and my professional journey so far. Feel free to click on the respective links to dive deeper into my past accomplishments and see the tangible results of my expertise.",
+        "On this page, you will find details about my educational background, including my degree and certifications, as well as information about my tech stack.",
+      line5:
+        "If you're interested in learning about my work history, you can find more details on the dedicated {0} page. This page provides a comprehensive overview of my professional journey and the exciting projects I've worked on. Feel free to click on the link to dive deeper into my past accomplishments and see the tangible results of my expertise.",
       education: "Education",
       degree: "Bachelor of Sciences, Applied Mathematics",
       university: "Autonomous University of Coahuila",
@@ -31,8 +38,26 @@ export const strings = new LocalizedStrings({
       databases: "Databases",
     },
     history: {
+      google: {
+        date: "2025 - Present",
+        role: "SWE III",
+        line: "Fullstack development",
+        tech: "Java, SQL & NoSQL databases",
+      },
+      capitalone: {
+        date: "2024 - 2025",
+        role: "Senior Software Engineer",
+        line: "Backend development",
+        tech: "Python, SQL & NoSQL databases",
+      },
+      cognizant: {
+        date: "2023 - 2024",
+        role: "Backend Developer",
+        line: "Backend development",
+        tech: "Python, SQL databases",
+      },
       clickit: {
-        date: "2021 - Today",
+        date: "2021 - 2023",
         role: "Full-stack developer",
         line: "Web application development",
         tech: "NodeJS, SQL & NoSQL databases, React, Javascript, Typescript",
@@ -163,15 +188,22 @@ export const strings = new LocalizedStrings({
       contact: "Contacto",
       services: "Servicios",
     },
+    notFound: {
+      title: "404 - Página No Encontrada",
+      message: "¡Ups! La página que buscas no existe.",
+      homeButton: "Volver al Inicio",
+    },
     home: {
       line1:
         "¡Bienvenido a mi sitio personal! Mi nombre es Carlos López, soy un Licenciado en Matemáticas Aplicadas que desarrolló un gran interes en la programación muy temprano durante mi carrera, llevandome a aventurarme en el mercado de desarrollo de software.",
       line2:
-        "Con más de tres años de experiencia, me especializo en el desarrollo web full-stack con un mayor enfoque en el backend. Me apasiona mantenerme al día con las últimas novedades en tecnología y expandir mi conocimiento continuamente.",
+        "Con más de cinco años de experiencia, me especializo en el desarrollo web full-stack con un mayor enfoque en el backend. Me apasiona mantenerme al día con las últimas novedades en tecnología y expandir mi conocimiento continuamente.",
       line3:
-        "En esta página encontrarás detallers sobre mi formación académica, incluyendo mi título y certificaciones, así como información sobre mi tech stack.",
+        "Más allá del código, disfruto escuchar música, viajar a nuevos lugares y mantenerme activo practicando deportes. Estos intereses me mantienen equilibrado e inspiran creatividad en mi trabajo.",
       line4:
-        "Si te interesa explorar mis proyectos o conocer más sobre mi historia laboral, puedes encontrar mas detalles en sus respectivas páginas: {0} y {1}. Estas páginas proveen una descripción general de los proyectos en los que he trabajado y de mi experiencia profesional al día de hoy. No dude en dar clic en los respectivos enlaces para profundizar en mis logros pasados y ver los resultados tangibles de mi experiencia.",
+        "En esta página encontrarás detalles sobre mi formación académica, incluyendo mi título y certificaciones, así como información sobre mi tech stack.",
+      line5:
+        "Si te interesa conocer más sobre mi historia laboral, puedes encontrar más detalles en la página dedicada de {0}. Esta página provee una descripción general de mi experiencia profesional y los proyectos emocionantes en los que he trabajado. No dudes en dar clic en el enlace para profundizar en mis logros pasados y ver los resultados tangibles de mi experiencia.",
       education: "Formación académica",
       degree: "Licenciado en Matemáticas Aplicadas",
       university: "Universidad Autónoma de Coahuila",
@@ -182,8 +214,26 @@ export const strings = new LocalizedStrings({
       databases: "Bases de datos",
     },
     history: {
+      google: {
+        date: "2025 - Presente",
+        role: "SWE III",
+        line: "Desarrollo fullstack",
+        tech: "Java, bases de datos SQL y NoSQL",
+      },
+      capitalone: {
+        date: "2024 - 2025",
+        role: "Ingeniero de Software Senior",
+        line: "Desarrollo backend",
+        tech: "Python, bases de datos SQL y NoSQL",
+      },
+      cognizant: {
+        date: "2023 - 2024",
+        role: "Desarrollador Backend",
+        line: "Desarrollo backend",
+        tech: "Python, bases de datos SQL",
+      },
       clickit: {
-        date: "2021 - Hoy",
+        date: "2021 - 2023",
         role: "Desarrollador full-stack",
         line: "Desarrollo de aplicaciones web",
         tech: "NodeJS, bases de datos SQL y NoSQL, React, Javascript, Typescript",

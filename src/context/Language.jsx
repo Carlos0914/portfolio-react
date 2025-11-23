@@ -5,23 +5,31 @@ export const LanguageContext = createContext();
 
 // eslint-disable-next-line react/prop-types
 const LanguageContextProvider = ({ children }) => {
-  const [loading, setLoading] = useState(false);
-  const [language, setLanguage] = useState(
-    localStorage.getItem("language") || "es"
-  );
+  const [language, setLanguage] = useState(() => {
+    const savedLanguage = localStorage.getItem("language") || "es";
+    strings.setLanguage(savedLanguage);
+    return savedLanguage;
+  });
+  const [version, setVersion] = useState(0);
 
+  const changeLanguage = (newLanguage) => {
+    // Update strings FIRST, synchronously, before state updates
+    strings.setLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);
+    // Then trigger state updates which will cause re-renders
+    setLanguage(newLanguage);
+    setVersion(v => v + 1);
+  };
+
+  // Backup: also update in effect in case something goes wrong
   useEffect(() => {
-    setLoading(true);
     strings.setLanguage(language);
     localStorage.setItem("language", language);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1);
   }, [language]);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
-      {!loading && children}
+    <LanguageContext.Provider value={{ language, setLanguage: changeLanguage, version }}>
+      {children}
     </LanguageContext.Provider>
   );
 };

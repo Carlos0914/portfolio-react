@@ -1,0 +1,64 @@
+.notfound-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.notfound-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.notfound-code {
+    font-size: 8rem;
+    font-weight: 900;
+    color: var(--accent-primary);
+    margin: 0;
+    line-height: 1;
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+}
+
+.notfound-title {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin: 1rem 0;
+}
+
+.notfound-message {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin: 1.5rem 0 2.5rem;
+}
+
+.notfound-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.notfound-button:hover {
+    background-color: var(--accent-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
